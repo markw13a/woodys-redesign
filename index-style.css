@@ -1,0 +1,188 @@
+*{
+	margin: 0;
+}
+
+body{
+	box-sizing: border-box;
+	font-family: "Helvetica Neue", Helvetica, Arial, serif;	
+	height: 100vh;
+	width: 100vw;
+	background-color: #f3f3f3;
+}
+
+.grid-wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 50px 100vh auto 100px;
+	grid-template-areas:
+		"header header header"
+		"img-container img-container img-container"
+		"services	services	services"
+		"footer footer footer";
+}
+
+header{
+	grid-area: header;
+	background-color: #356497;
+}
+
+header > a, header img, #menu-bar{
+	display: inline-block;
+	height: 100%;
+}
+
+#menu-bar{
+	position: relative;
+	top: 18px;
+	float: right;
+	
+	height: 30px;
+	min-width: 430px;
+}
+
+#menu-bar > li{
+	display: inline-block;
+	margin-right: 35px;
+	color: #fff;
+}
+
+#img-container{
+	grid-area: img-container;
+	background: linear-gradient(
+					to right,
+					rgba(20, 20, 20, 0.9),
+					rgba(20, 20, 20, 0.6)),
+					url("lorry.jpg");
+	background-size: cover;
+	
+	height: auto;
+}
+
+#img-container > h1{
+	font-size: 218px;
+	line-height: 0.8;
+	padding-top: 20px;
+	padding-left: 10px;
+	color: #fff;
+}
+
+#img-container > h1:first-letter{
+	color: #CC5500;
+}
+
+#img-container > p{
+	color: #fff;
+	margin: 30px 0;
+	padding-left: 25px;
+	font-size: 20px;
+	max-width: 47%;
+}
+
+#services-container{
+	grid-area: services;
+	text-align: center;
+	
+	margin-top: 100px;
+}
+
+#services-container h1{
+	color: #FF5700;
+	font-size: 48px;
+}
+
+#services-container h1:after{
+	content: '';
+	display: block;
+	height: 2px;
+	width: 100%;
+	background-color: #c1c1c1;
+}
+
+#services-list{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 50px 0;
+}
+
+#service-list:nth-child(n+4){
+	
+}
+
+#services-list li{
+	position: relative;
+	display: inline-block;
+	
+	width: 250px;
+	height: 300px;
+	margin: 10px 8%;
+	
+	background: linear-gradient(#f5f5f5, #e1e1e1);
+	border: 2px solid #c1c1c1;
+	border-radius: 3px;
+}
+
+#services-list img,  #services-list a{
+	padding-top: 5px;
+	display: inline-block;
+	width: 150px;
+	margin: auto;
+}
+
+#services-list > li > a{
+	width: 250px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#services-list h4{
+	color: #FF5700;
+	font-size: 20px;
+}
+
+#services-list p{
+	margin: 20px;
+	font-size: 14px;
+	color: #356497;
+}
+
+footer{
+	grid-area: footer;
+	background-color: #356497;
+	padding-top: 15px;
+	text-align: center;
+}
+
+footer > p{
+	color: #fff;
+	padding-left: 15px;
+	font-size: 14px;
+	text-align: left;
+}
+
+footer > p:first-letter{
+	color: #FF5700;
+}
+
+footer > img{
+	display: inline-block;
+	position: relative;
+	float: right;
+	bottom: 65px;
+	
+	height: 60px;
+	width: auto;
+	
+	margin-right: 35px;
+}
+
+footer > h5{
+	position: relative;
+	margin: auto;
+	color: #fff;
+	font-weight: normal;
+	bottom: 35px;
+}

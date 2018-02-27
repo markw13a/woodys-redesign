@@ -2,12 +2,12 @@
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="style.css">	
+		<link rel="stylesheet" type="text/css" href="index-style.css">	
 	</head>
 	<body class="grid-wrapper">
 		<header>
 			<a href="/">
-				<img src="combined-logo.svg">
+				<img src="combined-logo.svg" alt="home-icon">
 			</a>
 			<ul id="menu-bar">
 				<li>Ship</li>
@@ -17,30 +17,63 @@
 				<li>Log in</li>
 			</ul>
 		</header>
-		<form>
-			<h1>Log in</h1>
-			<div id="input-fields">
-				<label id="user-label">
-					Username or email address
-					<input type="text" name="user">
-				</label>
-				<label id="pass-label">
-					Password
-					<input type="password" name="pass">
-				</label>
-				<a href="/reset-password"> Forgotten your password? </a>
-			</div>
-			<input type="submit" value="Login" class="login">
-			<a href="/register" class="register-button"> Register </a>
-		</form>
+		<div id="img-container">
+			<h1>We <br/> Deliver</h1>
+			<p>
+				Woody’s Express Parcels is a Scottish haulage and courier company founded in 1986. We deliver to locations in the UK and abroad, and have permanent depots in Stornoway, Inverness and Bothwell (near Glasgow). Our network of subcontractors allows us to move goods (be they small packages or larger items, such as home furniture or palletised goods) all over the world.
+			</p>
+		</div>
+		<div id="services-container">
+			<h1>Our services</h1>
+			<ul id="services-list">
+				<li>
+					<a href=""></a>
+					<img src="icon_track.png">
+					<h4>Track a shipment</h4>
+				</li>
+				<li id="shipment">
+					<a href=""></a>
+					<img src="icon_ship.png">
+					<h4>Create a shipment</h4>
+					<p>Organise a consignment from collection point to delivery location</p>
+				</li>
+				<li id="quotation">
+					<a href=""></a>
+					<img src="icon_quote.png">
+					<h4>Get a quotation</h4>
+					<p>Use our postcode searcher to generate a quote </p>
+				</li>
+				<li id="drop-off">
+					<a href=""></a>
+					<img src="icon_dropoff.png">
+					<h4>Arrange a drop-off</h4>
+					<p> Arrange to leave an item with one of our depos </p>
+				</li>
+				<li id="shipping-history">
+					<a href=""></a>
+					<img src="icon_shiphistory.png">
+					<h4>Shipping history</h4>
+				</li>
+				<li id="depots">
+					<a href=""></a>
+					<img src="icon_locations.png">
+					<h4>Depot locations</h4>
+				</li>
+				<li id="contact">
+					<a href=""></a>
+					<img src="icon_contactus.png">
+					<h4>Contact us</h4>
+				</li>
+			</ul>
+		</div>
 		<footer>
 			<p> Telephone: 01851 703908 <br/></p>
 			<p> Fax: 01851 706684 <br/></p>
 			<p>	Head Office, Rigs Road <br/></p>
 			<p>	Stornoway, HS1 2RF <br/></p>
 			<h5>Copyright Woody's Express 2018</h5>
-			<img src="logo_iso.png">
-			<img src="logo_rha.png">
+			<img src="logo_iso.png" alt="iso-logo">
+			<img src="logo_rha.png" alt="rha-logo">
 		</footer>
 	</body>
 </html>
