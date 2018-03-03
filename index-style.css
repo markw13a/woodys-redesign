@@ -31,6 +31,11 @@ header > a, header img, #menu-bar{
 	height: 100%;
 }
 
+#burger-menu{
+	visibility: hidden;
+	display: none;
+}
+
 #menu-bar{
 	position: relative;
 	top: 18px;
@@ -46,12 +51,16 @@ header > a, header img, #menu-bar{
 	color: #fff;
 }
 
+#menu-bar > li > a{
+	color: #fff;
+	text-decoration: none;
+}
+
 #img-container{
 	grid-area: img-container;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	justify-content: center;
 	
 	background: linear-gradient(
 					to right,
@@ -135,10 +144,6 @@ header > a, header img, #menu-bar{
 	margin: 50px 0;
 }
 
-#service-list:nth-child(n+4){
-	
-}
-
 #services-list li{
 	position: relative;
 	display: inline-block;
@@ -214,4 +219,111 @@ footer > h5{
 	color: #fff;
 	font-weight: normal;
 	bottom: 35px;
+}
+
+@media screen and (max-width: 740px) {
+	.grid-wrapper{
+		grid-template-columns: 100vw;
+		grid-template-rows: auto auto 200px;
+		grid-template-areas:
+			"header"
+			"services"
+			"footer";
+	}
+	
+	#img-container{
+		visibility: hidden;
+		display: none;
+	}
+	
+	header{
+		text-align: center;
+	}
+	
+	header img{
+		display: inline-block;
+		width: 305px;
+		height: auto;
+		margin: auto;
+	}
+	
+	header #home-link:after{
+		content: '';
+		display: block;
+		height: 1px;
+		width: 100%;
+		background-color: #2F5A87;
+		border-bottom: 1px solid #315D8C;
+	}
+	
+	header > a{
+		width: 100%;
+		margin: auto;
+	}
+	
+	#burger-menu{
+		display: block;
+		visibility: initial;
+
+		margin-top: 20px;
+		padding: 20px 0;
+		width: 98%;
+		color: #fff;
+		border: 3px solid #3D73AD;
+	}
+	
+	#burger-menu:hover{
+		cursor: pointer;
+	}
+	
+	#menu-bar{
+		display: none;
+		visibility: none;
+		
+		/*Need to reset settings applied for non-mobile version of menu-bar*/
+		float: none;
+		padding: 0;
+		top: auto;
+		min-width: 0;
+		/**/
+		width: 80%;
+		height: auto;
+		margin: auto;
+	}
+	
+	#menu-bar.open{
+		display: inline-block;
+		visibility: initial;
+	}
+	
+	#menu-bar > li{
+		display: block;
+		height: auto;
+		border: 3px solid #3D73AD;
+		border-top: 0; /*Prevents border overlapping*/
+		margin: auto;
+	}
+	
+	#menu-bar > li > a, #menu-bar > li h4{
+		padding: 20px 0;
+		font-weight: normal;
+		height: 100%;
+	}
+	
+	footer > p{
+		text-align: center;
+	}
+
+	footer > img{
+		float: none;
+		bottom: auto;
+		margin-right: 0;
+	}
+
+	footer > h5{
+		margin: 15px auto;
+		color: #fff;
+		font-weight: normal;
+		bottom: auto;
+	}
 }

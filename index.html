@@ -3,18 +3,44 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="index-style.css">	
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="script.js"></script>
 	</head>
 	<body class="grid-wrapper">
 		<header>
-			<a href="/">
+			<a href="/" id="home-link">
 				<img src="combined-logo.svg" alt="home-icon">
 			</a>
+		 <!--Should only be visible at below 740px-->
+			<a id="burger-menu">
+				<p>Menu</p>
+			</a>
 			<ul id="menu-bar">
-				<li>Ship</li>
-				<li>Services</li>
-				<li>Track</li>
-				<li>Locations</li>
-				<li>Log in</li>
+				<li>
+					<a href="">
+						<h4>Ship</h4>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<h4>Services</h4>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<h4>Track</h4>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<h4>Locations</h4>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<h4>Log in</h4>
+					</a>
+				</li>
 			</ul>
 		</header>
 		<div id="img-container">
