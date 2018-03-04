@@ -154,7 +154,7 @@ header > a, header img, #menu-bar{
 	border-radius: 3px;
 }
 
-#services-list img,  #services-list a{
+#services-list img{
 	padding-top: 5px;
 	display: inline-block;
 	width: 150px;
@@ -305,6 +305,32 @@ footer > h5{
 		padding: 20px 0;
 		font-weight: normal;
 		height: 100%;
+	}
+	
+	#services-container h1{
+		font-size: 36px;
+	}
+	
+	#services-list li{
+		width: 350px;
+		height: 175px;
+	}
+	
+	#services-list img{
+		width: 75px;
+	}
+	
+	#services-list > li > a{
+		width: 350px;
+		height: 175px;
+	}
+	
+	#services-list h4{
+		font-size: 16px;
+	}
+	
+	#services-list p{
+		margin: 10px;
 	}
 	
 	footer > p{
