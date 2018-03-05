@@ -22,37 +22,6 @@ body{
 
 header{
 	grid-area: header;
-	background-color: #356497;
-}
-
-header > a, header img, #menu-bar{
-	display: inline-block;
-	height: 100%;
-}
-
-#burger-menu{
-	visibility: hidden;
-	display: none;
-}
-
-#menu-bar{
-	position: relative;
-	top: 18px;
-	float: right;
-	
-	height: 30px;
-	min-width: 430px;
-}
-
-#menu-bar > li{
-	display: inline-block;
-	margin-right: 35px;
-	color: #fff;
-}
-
-#menu-bar > li > a{
-	color: #fff;
-	text-decoration: none;
 }
 
 #img-container{
@@ -62,7 +31,7 @@ header > a, header img, #menu-bar{
 					to right,
 					rgba(20, 20, 20, 0.8),
 					rgba(20, 20, 20, 0.8)),
-					url("lorry.jpg");
+					url("../images/lorry.jpg");
 	background-size: cover;
 	height: auto;
 	min-height: 100vh;
@@ -182,40 +151,6 @@ header > a, header img, #menu-bar{
 
 footer{
 	grid-area: footer;
-	background-color: #356497;
-	padding-top: 15px;
-	text-align: center;
-}
-
-footer > p{
-	color: #fff;
-	padding-left: 15px;
-	font-size: 14px;
-	text-align: left;
-}
-
-footer > p:first-letter{
-	color: #FF5700;
-}
-
-footer > img{
-	display: inline-block;
-	position: relative;
-	float: right;
-	bottom: 65px;
-	
-	height: 60px;
-	width: auto;
-	
-	margin-right: 35px;
-}
-
-footer > h5{
-	position: relative;
-	margin: auto;
-	color: #fff;
-	font-weight: normal;
-	bottom: 35px;
 }
 
 @media screen and (max-width: 740px) {
@@ -232,81 +167,7 @@ footer > h5{
 		visibility: hidden;
 		display: none;
 	}
-	
-	header{
-		text-align: center;
-	}
-	
-	header img{
-		display: inline-block;
-		width: 305px;
-		height: auto;
-		margin: auto;
-	}
-	
-	header #home-link:after{
-		content: '';
-		display: block;
-		height: 1px;
-		width: 100%;
-		background-color: #2F5A87;
-		border-bottom: 1px solid #315D8C;
-	}
-	
-	header > a{
-		width: 100%;
-		margin: auto;
-	}
-	
-	#burger-menu{
-		display: block;
-		visibility: initial;
 
-		margin-top: 20px;
-		padding: 20px 0;
-		width: 98%;
-		color: #fff;
-		border: 3px solid #3D73AD;
-	}
-	
-	#burger-menu:hover{
-		cursor: pointer;
-	}
-	
-	#menu-bar{
-		display: none;
-		visibility: none;
-		
-		/*Need to reset settings applied for non-mobile version of menu-bar*/
-		float: none;
-		padding: 0;
-		top: auto;
-		min-width: 0;
-		/**/
-		width: 80%;
-		height: auto;
-		margin: auto;
-	}
-	
-	#menu-bar.open{
-		display: inline-block;
-		visibility: initial;
-	}
-	
-	#menu-bar > li{
-		display: block;
-		height: auto;
-		border: 3px solid #3D73AD;
-		border-top: 0; /*Prevents border overlapping*/
-		margin: auto;
-	}
-	
-	#menu-bar > li > a, #menu-bar > li h4{
-		padding: 20px 0;
-		font-weight: normal;
-		height: 100%;
-	}
-	
 	#services-container h1{
 		font-size: 36px;
 	}
@@ -331,22 +192,5 @@ footer > h5{
 	
 	#services-list p{
 		margin: 10px;
-	}
-	
-	footer > p{
-		text-align: center;
-	}
-
-	footer > img{
-		float: none;
-		bottom: auto;
-		margin-right: 0;
-	}
-
-	footer > h5{
-		margin: 15px auto;
-		color: #fff;
-		font-weight: normal;
-		bottom: auto;
 	}
 }

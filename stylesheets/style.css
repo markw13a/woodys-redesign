@@ -21,27 +21,6 @@ body{
 
 header{
 	grid-area: header;
-	background-color: #356497;
-}
-
-header > a, img, #menu-bar{
-	display: inline-block;
-	height: 100%;
-}
-
-#menu-bar{
-	position: relative;
-	top: 18px;
-	float: right;
-	
-	height: 30px;
-	min-width: 440px;
-}
-
-#menu-bar > li{
-	display: inline-block;
-	margin-right: 35px;
-	color: #fff;
 }
 
 form{
@@ -147,38 +126,19 @@ label > input{
 
 footer{
 	grid-area: footer;
-	background-color: #356497;
-	padding-top: 15px;
-	text-align: center;
 }
 
-footer > p{
-	color: #fff;
-	padding-left: 15px;
-	font-size: 14px;
-	text-align: left;
-}
-
-footer > p:first-letter{
-	color: #FF5700;
-}
-
-footer > img{
-	display: inline-block;
-	position: relative;
-	float: right;
-	bottom: 65px;
+@media screen and (max-width: 740px) {
+	.grid-wrapper{
+		grid-template-columns: 100vw;
+		grid-template-rows: auto auto 200px;
+		grid-template-areas:
+			"header"
+			"login-form"
+			"footer";
+	}
 	
-	height: 60px;
-	width: auto;
-	
-	margin-right: 35px;
-}
-
-footer > h5{
-	position: relative;
-	margin: auto;
-	color: #fff;
-	font-weight: normal;
-	bottom: 35px;
+	form{
+		margin: 10% auto;
+	}
 }
